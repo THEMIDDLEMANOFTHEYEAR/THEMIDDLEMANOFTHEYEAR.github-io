@@ -1,0 +1,1976 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Cursor effect */
+.cursor-effect {
+    animation: cursorAnimation 0.5s infinite alternate;
+}
+
+@keyframes cursorAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Cursor effect */
+.cursor-effect {
+    animation: cursorAnimation 0.5s infinite alternate;
+}
+
+@keyframes cursorAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative; /* Required for gradient overlay */
+    overflow: hidden; /* Required for gradient overlay */
+    transition: all 0.3s ease; /* Required for background color transition */
+}
+
+.service img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease; /* Required for image opacity change */
+}
+
+.service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    opacity: 0.8; /* Opacity change */
+    border-color: #ff6f61; /* Border color change */
+    background-color: #f0f0f0; /* Background color change */
+    transform: scale(1.1) rotate(3deg); /* Scale and rotate */
+}
+
+.service:hover h3 {
+    color: #ff6f61; /* Text color change */
+}
+
+/* Gradient overlay */
+.service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Required for gradient overlay */
+}
+
+.service:hover::before {
+    opacity: 1; /* Show on hover */
+}
+
+/* Text slide up */
+.service p {
+    transition: transform 0.3s ease; /* Required for text slide up */
+}
+
+.service:hover p {
+    transform: translateY(-20px); /* Slide up text content */
+}
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Cursor effect */
+.cursor-effect {
+    animation: cursorAnimation 0.5s infinite alternate;
+}
+
+@keyframes cursorAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Search bar styles */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Break animation */
+@keyframes breakAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+.search-container.break .search-bar {
+    animation: breakAnimation 0.5s ease forwards;
+}
+
+.search-container.break .search-button {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Cursor effect */
+.cursor-effect {
+    animation: cursorAnimation 0.5s infinite alternate;
+}
+
+@keyframes cursorAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Search bar styles */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Break animation */
+@keyframes breakAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+.search-container.break .search-bar {
+    animation: breakAnimation 0.5s ease forwards;
+}
+
+.search-container.break .search-button {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+/* styles.css */
+
+/* Pulsating animation for the price */
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Popping animation for the price */
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Your existing CSS styles */
+
+/* Add the following styles for additional animations */
+
+/* Pulsating animation */
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Popping animation */
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Animation for rolling icons */
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Continue from previous CSS */
+
+/* Floating animation */
+.icon:hover {
+    animation: floatAnimation 3s ease infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Color change animation */
+.icon:hover {
+    filter: hue-rotate(180deg); /* Adjust hue rotation angle */
+    transition: filter 0.5s ease;
+}
+
+/* Shaking animation */
+.icon:hover {
+    animation: shakeAnimation 0.5s ease infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Bouncing animation */
+.icon:hover {
+    animation: bounceAnimation 0.5s ease infinite;
+}
+
+@keyframes bounceAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+/* Continue from previous CSS */
+
+/* Icon animations */
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulsating animation */
+.icon:hover {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Floating animation */
+.icon:hover {
+    animation: floatAnimation 3s ease infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Color change animation */
+.icon:hover {
+    filter: hue-rotate(180deg); /* Adjust hue rotation angle */
+    transition: filter 0.5s ease;
+}
+
+/* Shaking animation */
+.icon:hover {
+    animation: shakeAnimation 0.5s ease infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Bouncing animation */
+.icon:hover {
+    animation: bounceAnimation 0.5s ease infinite;
+}
+
+@keyframes bounceAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+/* Continue from previous CSS */
+
+/* Add box shadow effect on hover */
+.service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Change opacity on hover */
+.service:hover {
+    opacity: 0.8;
+}
+
+/* Change border color on hover */
+.service:hover {
+    border-color: #ff6f61; /* Change to your desired color */
+}
+
+/* Change background color on hover */
+.service:hover {
+    background-color: #f0f0f0; /* Change to your desired color */
+}
+
+/* Change text color on hover */
+.service:hover h3 {
+    color: #ff6f61; /* Change to your desired color */
+}
+
+/* Add gradient overlay on hover */
+.service:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+}
+
+/* Scale and rotate on hover */
+.service:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Change image opacity on hover */
+.service:hover img {
+    opacity: 0.8;
+}
+
+/* Slide up text content on hover */
+.service:hover p {
+    transform: translateY(-20px);
+}
+
+/* Background color transition on hover */
+.service {
+    transition: background-color 0.3s ease;
+}
+
+.service:hover {
+    background-color: #f0f0f0; /* Change to your desired color */
+}
+/* Continue from previous CSS */
+
+/* Pulsating animation */
+.icon:hover {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Floating animation */
+.icon:hover {
+    animation: floatAnimation 3s ease infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Color change animation */
+.icon:hover {
+    filter: hue-rotate(180deg); /* Adjust hue rotation angle */
+    transition: filter 0.5s ease;
+}
+
+/* Shaking animation */
+.icon:hover {
+    animation: shakeAnimation 0.5s ease infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Bouncing animation */
+.icon:hover {
+    animation: bounceAnimation 0.5s ease infinite;
+}
+
+@keyframes bounceAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+/* Continue from previous CSS */
+
+/* Pulsating animation for the price */
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Popping animation for the price */
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* Continue from previous CSS */
+
+/* Add box shadow effect on hover */
+.service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Change opacity on hover */
+.service:hover {
+    opacity: 0.8;
+}
+
+/* Change border color on hover */
+.service:hover {
+    border-color: #ff6f61; /* Change to your desired color */
+}
+
+/* Change background color on hover */
+.service:hover {
+    background-color: #f0f0f0; /* Change to your desired color */
+}
+
+/* Change text color on hover */
+.service:hover h3 {
+    color: #ff6f61; /* Change to your desired color */
+}
+
+/* Add gradient overlay on hover */
+.service:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+}
+
+/* Scale and rotate on hover */
+.service:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Change image opacity on hover */
+.service:hover img {
+    opacity: 0.8;
+}
+
+/* Slide up text content on hover */
+.service:hover p {
+    transform: translateY(-20px);
+}
+
+/* Background color transition on hover */
+.service {
+    transition: background-color 0.3s ease;
+}
+
+.service:hover {
+    background-color: #f0f0f0; /* Change to your desired color */
+}
+
+/* Pulsating animation */
+.icon:hover {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Floating animation */
+.icon:hover {
+    animation: floatAnimation 3s ease infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Color change animation */
+.icon:hover {
+    filter: hue-rotate(180deg); /* Adjust hue rotation angle */
+    transition: filter 0.5s ease;
+}
+
+/* Shaking animation */
+.icon:hover {
+    animation: shakeAnimation 0.5s ease infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Bouncing animation */
+.icon:hover {
+    animation: bounceAnimation 0.5s ease infinite;
+}
+
+@keyframes bounceAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Pulsating animation for the price */
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Popping animation for the price */
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Add box shadow effect on hover */
+.service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Change opacity on hover */
+.service:hover {
+    opacity: 0.8;
+}
+
+/* Change border color on hover */
+.service:hover {
+    border-color: #ff6f61; /* Change to your desired color */
+}
+
+/* Change background color on hover */
+.service:hover {
+    background-color: #f0f0f0; /* Change to your desired color */
+}
+
+/* Change text color on hover */
+.service:hover h3 {
+    color: #ff6f61; /* Change to your desired color */
+}
+
+/* Add gradient overlay on hover */
+.service:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);
+}
+
+/* Scale and rotate on hover */
+.service:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Change image opacity on hover */
+.service:hover img {
+    opacity: 0.8;
+}
+
+/* Slide up text content on hover */
+.service:hover p {
+    transform: translateY(-20px);
+}
+
+/* Background color transition on hover */
+.service {
+    transition: background-color 0.3s ease;
+}
+
+.service:hover {
+    background-color: #f0f0f0; /* Change to your desired color */
+}
+
+/* Pulsating animation */
+.icon:hover {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Floating animation */
+.icon:hover {
+    animation: floatAnimation 3s ease infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Color change animation */
+.icon:hover {
+    filter: hue-rotate(180deg); /* Adjust hue rotation angle */
+    transition: filter 0.5s ease;
+}
+
+/* Shaking animation */
+.icon:hover {
+    animation: shakeAnimation 0.5s ease infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Bouncing animation */
+.icon:hover {
+    animation: bounceAnimation 0.5s ease infinite;
+}
+
+@keyframes bounceAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Popping animation for the price */
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Header styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main content styles */
+.main {
+    padding: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation container styles */
+.animation-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Product styles */
+.product {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.5s ease;
+}
+
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.main {
+    text-align: center;
+    padding: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.service {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #333;
+}
+
+/* Animation container styles */
+.animation-container {
+    position: relative;
+}
+
+.animated-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animated-element img {
+    animation: scaleAnimation 2s ease-in-out infinite alternate,
+               rotateAnimation 5s linear infinite;
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+/* Product styles */
+.product {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.price {
+    transition: all 0.5s ease;
+}
+
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+/* styles.css */
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animated-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animated-element img {
+    animation: scaleAnimation 2s ease-in-out infinite alternate,
+               rotateAnimation 5s linear infinite;
+}
+
+@keyframes breakAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px) rotate(-10deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+.search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container.break .search-bar {
+    animation: breakAnimation 0.5s ease forwards;
+}
+
+.search-container.break .search-button {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Services section styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.service {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+}
+
+/* Animation container */
+.animation-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Search container styles */
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container.break .search-bar {
+    animation: breakAnimation 0.5s ease forwards;
+}
+
+.search-container.break .search-button {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Product styles */
+.product {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+}
+
+.price {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Service section styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.service {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation container styles */
+.animation-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+}
+
+/* Search container styles */
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Product section styles */
+.product {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+/* styles.css */
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Service section styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.service {
+    flex: 0 0 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    border-color: #ff6f61;
+    background-color: #f0f0f0;
+}
+
+.service:hover h3 {
+    color: #ff6f61;
+}
+
+/* Search container styles */
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container.break .search-bar {
+    animation: breakAnimation 0.5s ease forwards;
+}
+
+.search-container.break .search-button {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover {
+    animation: rollAnimation 2s linear infinite;
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Product section styles */
+.product {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.product h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.price {
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+.price.pulse {
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.price.pop {
+    animation: popAnimation 0.5s forwards;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
